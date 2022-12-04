@@ -1,0 +1,94 @@
+\* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ebe5f3;
+}
+
+.App {
+  text-align: center;
+}
+
+.app-header {
+  background-color: #282c34;
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.add-task {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.add-task input {
+  width: 230px;
+  padding: 5px;
+  border: 1px solid azure;
+}
+
+.add-task button {
+  width: 60px;
+  padding: 5px;
+  margin: 0 0 0 14px;
+  border: 1px solid azure;
+}
+
+.tasks-row {
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+}
+
+.task-list-item {
+  display: flex;
+  /* text-align: left; */
+  border: 1px solid azure;
+  font-size: 12px;
+  align-items: center;
+}
+
+.task-list-header {
+  background-color: azure;
+  width: 275px;
+  text-align: left;
+  border: 1px solid azure;
+  padding: 8px;
+  font-size: 15px;
+  margin: 27px 0 0 0;
+}
+
+img {
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.task-name {
+  flex: 1;
+  text-align: start;
+  width: 80px;
+}
+
+.tasklist {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.newinput {
+  display: flex;
+  flex: 1;
+}
+
+.newinput input {
+  width: 100%;
+}
