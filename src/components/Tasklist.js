@@ -23,7 +23,7 @@ function TaskList(props) {
                                 <img className="edit-img" src="/assets/pencil (1).png" onClick={() => props.editTask(index)} />
                             </div>
                         }
-                        <img className="edit-img" src="/assets/delete.png" onClick={() => props.callback(index, "tasklisti")} />
+                        <img className="edit-img" src="/assets/delete.png" onClick={() => props.callback(index, "tasklist")} />
 
                     </div>
                 )

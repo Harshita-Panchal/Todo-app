@@ -9,7 +9,6 @@ function App() {
   let [completeName, setCompleteName] = useState([])      // Add task to completeTask List
   let [edit, setEdit] = useState("")                      // Edit Task
   let [inputChange, setInputChange] = useState("")
-  // let [newInputValue, setNewInputValue] = useState(" ")
 
   //  get input value
   const handleChange = (event) => {
@@ -30,6 +29,7 @@ function App() {
       if (window.confirm("Do you want to delete?")) {
         // take new variable for
         const newList = items.filter((elem, index) => {
+          console.log(elem)
           return id !== index
         })
         setItems(newList)
@@ -55,7 +55,6 @@ function App() {
       return id !== index
     })
     setItems(List)
-
 
     //  for element tranfer from Tasklist to complete task list
     const deleteItem = items.filter((ele, index) => {
@@ -107,7 +106,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className="app-header"> Welcome to your To-do List </h1>
+      <h1 className="app-header"> To-Do List </h1>
       <div className="container">
         <div className="add-task">
           <input type="text" value={inputValue} placeholder="Add new Task" onChange={handleChange} id="input" />
